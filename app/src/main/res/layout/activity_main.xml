@@ -44,6 +44,7 @@
         android:layout_marginTop="146dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="242dp"
+        android:onClick="playSimpsonSong"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageViewHomer"
         app:layout_constraintHorizontal_bias="0.409"

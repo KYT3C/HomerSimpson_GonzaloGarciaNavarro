@@ -1,10 +1,13 @@
 package com.example.homersimpson_gonzalogarcianavarro;
 
+
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     AnimationDrawable animationDrawable;
     //ImageViewImagenesAparecen
     ImageView imageViewTheSimpson,imageViewDonut,imageViewERojo,imageViewEAzul,imageViewEVerde,imageViewOjo;
+    //MediaPlayer
+    MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +48,18 @@ public class MainActivity extends AppCompatActivity {
         imageViewTheSimpson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imageViewDonut.setVisibility(View.VISIBLE);
-                imageViewERojo.setVisibility(View.VISIBLE);
-                imageViewEAzul.setVisibility(View.VISIBLE);
-                imageViewEVerde.setVisibility(View.VISIBLE);
+                    imageViewDonut.setVisibility(View.VISIBLE);
+                    imageViewERojo.setVisibility(View.VISIBLE);
+                    imageViewEAzul.setVisibility(View.VISIBLE);
+                    imageViewEVerde.setVisibility(View.VISIBLE);
             }
         });
-
     }
 
+    public void playSimpsonSong(View v) {
+        player = MediaPlayer.create(this, R.raw.the_simpsons);
+        if (player.isPlaying()) {
+            player.pause();
+        }else {player = MediaPlayer.create(this, R.raw.the_simpsons);player.start();}
+    }
 }
