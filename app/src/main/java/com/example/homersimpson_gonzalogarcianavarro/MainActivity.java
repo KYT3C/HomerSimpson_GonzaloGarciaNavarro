@@ -77,7 +77,9 @@ public class MainActivity extends AppCompatActivity {
     public void playSimpsonSong(View v) {
         if (player.isPlaying()) {
             player.pause();
-        }else {player.start();}
+        }else {
+            player.start();
+        }
     }
 
 
