@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">HomerSimpson_GonzaloGarciaNavarro</string>
+    <string name="animation_list_the_simpson_title">Animation List The Simpson Title</string>
+    <string name="imagen_homer">Imagen Homer</string>
+    <string name="imagen_donut">Imagen Donut</string>
+    <string name="imagen_engranaje_azul">Imagen Engranaje Azul</string>
+    <string name="imagen_engranaje_rojo">Imagen Engranaje Rojo</string>
+    <string name="imagen_engranaje_verde">Imagen Engranaje Verde</string>
+    <string name="imagen_ojo_homer">Imagen Ojo Homer</string>
 </resources>
